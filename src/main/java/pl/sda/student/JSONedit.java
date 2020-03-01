@@ -10,15 +10,16 @@ import java.util.List;
 public class JSONedit {
     public JSONedit() {
     }
+
     public JSONedit(String file, ArrayList list) {
     }
-    public void writeList (String filename, List<Book> bookList){
+
+    public void writeList(String filename, List<Book> bookList) {
         ObjectMapper objectMapper = new ObjectMapper();
-try{
-    objectMapper.writeValue(new File(filename+".json"), bookList);
-}
-catch (IOException e){
-    e.printStackTrace();
-}
+        try {
+            objectMapper.writeValue(new File(filename + ".json"), bookList);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

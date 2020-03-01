@@ -2,8 +2,10 @@ package pl.sda.student;
 
 public class Category {
     private String Category;
+
     public Category() {
     }
+
     public Category(String category) {
         this.Category = category;
     }
